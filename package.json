@@ -1,0 +1,25 @@
+{
+  "name": "homepage-portfolio",
+  "version": "1.0.0",
+  "description": "This is the homepage to the portfolio site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aman-singh09/HomePage-Portfolio.git"
+  },
+  "author": "Aman Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aman-singh09/HomePage-Portfolio/issues"
+  },
+  "homepage": "https://github.com/aman-singh09/HomePage-Portfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
