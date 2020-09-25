@@ -2,10 +2,18 @@ const express = require('express');
 const app = express();
 const port = 5000
 
+app.use(express.static('public'));
+app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/img', express.static(__dirname + 'public/img'))
+app.use('/scripts',express.static(__dirname + 'public/scripts'))
+
+app.set('views', './views');
 app.set('view engine','ejs');
 
+
+
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+  res.render('index')
 })
 
 app.get('/home',(req,res)=> {
@@ -14,5 +22,4 @@ app.get('/home',(req,res)=> {
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)
-
 })
